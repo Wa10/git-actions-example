@@ -36,4 +36,8 @@ jobs:
       - name: Build Cambio Service Server Container Image
         working-directory: ./Dockerizing/10-cambio-service
         run: mvn clean package -DskipTests
+
+      - name: Build Book Service Server Container Image
+        working-directory: ./Dockerizing/10-book-service
+        run: mvn clean package -DskipTests
    
