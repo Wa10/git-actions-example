@@ -40,4 +40,8 @@ jobs:
       - name: Build Book Service Server Container Image
         working-directory: ./Dockerizing/10-book-service
         run: mvn clean package -DskipTests
+
+      - name: Dcoker Compose build
+        working-directory: ./Dockerizing/
+        run: docker-compose build  
    
