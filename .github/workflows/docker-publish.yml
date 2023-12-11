@@ -32,4 +32,8 @@ jobs:
       - name: Build API Gateway Server Container Image
         working-directory: ./Dockerizing/10-api-gateway
         run: mvn spring-boot:build-image -DskipTests 
+
+      - name: Build Cambio Service Server Container Image
+        working-directory: ./Dockerizing/10-cambio-service
+        run: mvn clean package -DskipTests
    
